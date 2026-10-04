@@ -1,4 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
+interface TypePassword {
+  sigla: string;
+  desc: string;
+  icon: string;
+  colorClass: 'red' | 'blue' | 'green';
+}
 
 @Component({
   selector: 'app-emitir-senha',
@@ -6,11 +13,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./emitir-senha.page.scss'],
   standalone: false,
 })
-export class EmitirSenhaPage implements OnInit {
+export class EmitirSenhaPage {
+  typesPassword: TypePassword[] = [
+    { sigla: 'SP', desc: 'Prioritária', icon: 'person', colorClass: 'red' },
+    { sigla: 'SE', desc: 'Retirada de Exames', icon: 'flask', colorClass: 'blue' },
+    { sigla: 'SG', desc: 'Geral', icon: 'people', colorClass: 'green' },
+  ];
 
-  constructor() { }
-
-  ngOnInit() {
+  selecionarSenha(item: TypePassword) {
+    console.log('Senha selecionada:', item);
   }
-
 }

@@ -1,13 +1,57 @@
-<ion-header [translucent]="true">
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>emitir-senha</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Emitir Senha</ion-title>
+    <ion-buttons slot="end">
+      <ion-button disabled aria-hidden="true" style="visibility: hidden"></ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">emitir-senha</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
+  <h2 class="title-sec">Selecione o tipo de senha</h2>
+
+  <div class="list-cards">
+    <div
+      *ngFor="let item of typesPassword"
+      class="option-card ion-activatable"
+      [ngClass]="item.colorClass"
+      role="button"
+      tabindex="0"
+      [attr.aria-label]="'Emitir senha ' + item.sigla + ' - ' + item.desc"
+      (click)="selecionarSenha(item)"
+      (keydown.enter)="selecionarSenha(item)"
+    >
+      <div class="icon-box">
+        <ion-icon [name]="item.icon"></ion-icon>
+      </div>
+
+      <div class="info-box">
+        <span class="sigla">{{ item.sigla }}</span>
+        <span class="desc">{{ item.desc }}</span>
+      </div>
+
+      <ion-icon name="chevron-forward" class="arrow-icon"></ion-icon>
+      <ion-ripple-effect></ion-ripple-effect>
+    </div>
+  </div>
 </ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-tab-bar slot="bottom" selectedTab="inicio">
+    <ion-tab-button tab="inicio" routerLink="/">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Início</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="senhas" routerLink="/senhas">
+      <ion-icon name="list"></ion-icon>
+      <ion-label>Senhas</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="mais" routerLink="/mais">
+      <ion-icon name="ellipsis-horizontal"></ion-icon>
+      <ion-label>Mais</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-footer>
