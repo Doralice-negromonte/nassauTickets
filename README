@@ -1,21 +1,55 @@
 # nassauTickets
 
 ## descrição;
+O nassauTickets é um sistema de gerenciamento de chamados que permite aos usuários registrar solicitações de suporte e acompanhar seu andamento. Os responsáveis pelo atendimento podem classificar, atribuir e atualizar os chamados.
 
 ## objetivo;
+O objetivo do sistema é centralizar as solicitações de suporte, facilitar a comunicação entre usuários e atendentes e oferecer maior controle sobre prazos e históricos de atendimento.
+
 
 ## tecnologias utilizadas;
-- Node.js (inclui o gerenciador de pacotes NPM)
+- Ionico com angula
+- Node.js
 
 ## arquitetura ou visão geral do sistema;
 1. TUDO QUE FOI INSTALADO NO MOMENTO E NÃO DEVE ESTAR NO GITHUB FOI ADICIONADO EM _``.GITIGNORE``_
 
+2. O nassauTickets é organizado em componentes que trabalham em conjunto para permitir o gerenciamento dos chamados.
+```text
+Usuário
+   |
+   v
+Interface do sistema (Front-end)
+   |
+   v
+Funcionalidades do sistema
+```
+
+* **Usuário:** utiliza o sistema para acessar e gerenciar os chamados.
+* **Front-end:** apresenta as telas e permite a interação com o sistema.
+* **Funcionalidades do sistema:** responsáveis pelas ações e regras necessárias para o funcionamento do nassauTickets.
+
 ## instruções de instalação;
+- Pré-requisitos
+* Git
+* Node.js
+
+- Instalação
+1. Clone o repositório e acesse a pasta:
+```bash
+git clone URL_DO_REPOSITORIO
+cd frontend
+```
+
+2. Instale as dependências:
+```bash
+FAZER _``NPM I``_ DENTRO DA PASTA _``FRONTEND``_ QUANDO CLONAR PARA INSTALAR AS DEPENDENCIAS JÁ ADICIONADAS NO PROJETO
+```
 
 ## instruções de execução;
-1. FAZER _``NPM I``_ DENTRO DA PASTA _``FRONTEND``_ QUANDO CLONAR PARA INSTALAR AS DEPENDENCIAS JÁ ADICIONADAS NO PROJETO
+1. USAR _``IONIC SERVE``_ DENTRO DA PASTA _``FRONTEND``_ PARA VER AS TELAS
 
-2. USAR _``IONIC SERVE``_ DENTRO DA PASTA _``FRONTEND``_ PARA VER AS TELAS
+2. O sistema estará disponível no endereço indicado pelo projeto, geralmente: ````http://localhost:3000````
 
 ## informações necessárias para configuração;
 **CRIAR FRONT-END COM IONIC**
@@ -31,9 +65,24 @@
 
 ## Membros (identificação e papéis dos membros);
 
+| Nome                                    | Matrícula | Papel          |
+| --------------------------------------- | --------- | -------------- |
+| Andressa Valéria Cardoso dos Santos     | 01245991  | Testadora      |
+| Bruna Freitas da Silva                  | 01332048  | Desenvolvedora |
+| Maria Doralice Araújo Nogueira da Silva | 01794484  | Scrum          |
+| Nicoly Gabriele da Silva                | 01864943  | Documentadora  |
+| Rian Matias de Farias                   | 01850177  | Desenvolvedor  |
+| Sellena de Assis Ribeiro Lima           | 01862534  | Desenvolvedora |
+
+
 ## informações sobre branches;
+- O projeto utiliza branches para organizar o desenvolvimento e evitar alterações diretamente na versão principal.
+1. main: versão principal e estável do projeto.
+2. dev: desenvolvimento e integração de novas funcionalidades.
 
 ## demais informações necessárias para utilização do sistema.
+1. Para utilizar o nassauTickets, o usuário deve realizar o login no sistema e possuir as permissões necessárias para acessar suas funcionalidades.
 
+2. Após o acesso, é possível criar, visualizar e acompanhar chamados de acordo com o tipo de usuário e suas permissões.
 
   
