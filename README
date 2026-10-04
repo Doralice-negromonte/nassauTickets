@@ -1,21 +1,20 @@
-nassauTickets
+# nassauTickets
 
 ## descrição;
-O nassauTickets é um sistema de gerenciamento de chamados que permite aos usuários registrar solicitações de suporte e acompanhar seu andamento.
-Os responsáveis pelo atendimento podem classificar, atribuir e atualizar os chamados.
+O nassauTickets é um sistema de gerenciamento de chamados que permite aos usuários registrar solicitações de suporte e acompanhar seu andamento. Os responsáveis pelo atendimento podem classificar, atribuir e atualizar os chamados.
 
 ## objetivo;
-O objetivo do sistema é centralizar as solicitações de suporte, facilitar a comunicação entre usuários e atendentes
-e oferecer maior controle sobre prazos e históricos de atendimento.
+O objetivo do sistema é centralizar as solicitações de suporte, facilitar a comunicação entre usuários e atendentes e oferecer maior controle sobre prazos e históricos de atendimento.
 
 
 ## tecnologias utilizadas;
-Ionico com angula
+- Ionico com angula
+- Node.js
 
 ## arquitetura ou visão geral do sistema;
+1. TUDO QUE FOI INSTALADO NO MOMENTO E NÃO DEVE ESTAR NO GITHUB FOI ADICIONADO EM _``.GITIGNORE``_
 
-O nassauTickets é organizado em componentes que trabalham em conjunto para permitir o gerenciamento dos chamados.
-
+2. O nassauTickets é organizado em componentes que trabalham em conjunto para permitir o gerenciamento dos chamados.
 ```text
 Usuário
    |
@@ -30,51 +29,39 @@ Funcionalidades do sistema
 * **Front-end:** apresenta as telas e permite a interação com o sistema.
 * **Funcionalidades do sistema:** responsáveis pelas ações e regras necessárias para o funcionamento do nassauTickets.
 
-
 ## instruções de instalação;
-
-Pré-requisitos
-
+- Pré-requisitos
 * Git
 * Node.js
-* NPM
-* Banco de dados utilizado pelo projeto
 
-Instalação
-
-Clone o repositório e acesse a pasta:
-
+- Instalação
+1. Clone o repositório e acesse a pasta:
 ```bash
 git clone URL_DO_REPOSITORIO
-cd nassauTickets
+cd frontend
 ```
 
-Instale as dependências:
-
+2. Instale as dependências:
 ```bash
-npm install
+FAZER _``NPM I``_ DENTRO DA PASTA _``FRONTEND``_ QUANDO CLONAR PARA INSTALAR AS DEPENDENCIAS JÁ ADICIONADAS NO PROJETO
 ```
-
-Configure o arquivo `.env` com as informações necessárias para o sistema e o banco de dados.
-
-Após essas etapas, o projeto estará pronto para ser executado.
-
 
 ## instruções de execução;
-Após a instalação e configuração do projeto, execute o comando:
+1. USAR _``IONIC SERVE``_ DENTRO DA PASTA _``FRONTEND``_ PARA VER AS TELAS
 
-npm run dev
-
-O sistema estará disponível no endereço indicado pelo projeto, geralmente:
-
-http://localhost:3000
-
-Para executar os testes, caso disponíveis:
-
-npm test
-
+2. O sistema estará disponível no endereço indicado pelo projeto, geralmente: ````http://localhost:3000````
 
 ## informações necessárias para configuração;
+**CRIAR FRONT-END COM IONIC**
+1.  Ionic CLI: ``npm install -g @ionic/clinpm install -g @ionic/cli``
+
+2. Gerar projeto: ``ionic start frontend tabs --type=angular``
+
+**ROTAS E TELAS**
+- Comandos utilizados
+1. ionic generate page inicio
+2. ionic generate page emitir-senha
+3. ionic generate page login-atendente
 
 ## Membros (identificação e papéis dos membros);
 
@@ -89,19 +76,13 @@ npm test
 
 
 ## informações sobre branches;
-
-O projeto utiliza branches para organizar o desenvolvimento e evitar alterações diretamente na versão principal.
-
-main: versão principal e estável do projeto.
-develop: desenvolvimento e integração de novas funcionalidades.
-feature: criação de novas funcionalidades.
-fix: correção de erros e problemas.
-
+- O projeto utiliza branches para organizar o desenvolvimento e evitar alterações diretamente na versão principal.
+1. main: versão principal e estável do projeto.
+2. dev: desenvolvimento e integração de novas funcionalidades.
 
 ## demais informações necessárias para utilização do sistema.
+1. Para utilizar o nassauTickets, o usuário deve realizar o login no sistema e possuir as permissões necessárias para acessar suas funcionalidades.
 
-Para utilizar o nassauTickets, o usuário deve realizar o login no sistema e possuir as permissões necessárias para acessar suas funcionalidades.
-
-Após o acesso, é possível criar, visualizar e acompanhar chamados de acordo com o tipo de usuário e suas permissões.
+2. Após o acesso, é possível criar, visualizar e acompanhar chamados de acordo com o tipo de usuário e suas permissões.
 
   
