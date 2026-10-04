@@ -1,46 +1,33 @@
-**PS: FAZER _``NPM I``_ DENTRO DA PASTA _``FRONTEND``_ QUANDO CLONAR PARA INSTALAR AS DEPENDENCIAS JÁ ADICIONADAS NO PROJETO**
-
-**PS2: TUDO QUE FOI INSTALADO NO MOMENTO E NÃO DEVE ESTAR NO GITHUB FOI ADICIONADO EM _``.GITIGNORE``_**
-
-**PS3: USAR _``IONIC SERVE``_ DENTRO DA PASTA _``FRONTEND``_ PARA VER AS TELAS**
-
-## ROTAS E TELAS
-- Comandos utilizados
-1. ionic generate page inicio
-2. ionic generate page emitir-senha
-3. ionic generate page login-atendente
-
-                       INICIO
-                         │
-              ┌──────────┴──────────┐
-              │                     │
-              ▼                     ▼
-       SOLICITAR SENHA          FAZER LOGIN
-
-## CORES
-- Fundo geral: #f7faff
-- Icone, botão, parte clara do titulo: #216ae7
-- Letras (titulo e paragrafo): #0E417F
-- Fundo claro do degrade: #d8eaff
-- Fundo escuro do degrade: #4fa1f9
-
-#
-#
-nassauTickets
+# nassauTickets
 
 ## descrição;
 
 ## objetivo;
 
 ## tecnologias utilizadas;
+- Node.js (inclui o gerenciador de pacotes NPM)
 
 ## arquitetura ou visão geral do sistema;
+1. TUDO QUE FOI INSTALADO NO MOMENTO E NÃO DEVE ESTAR NO GITHUB FOI ADICIONADO EM _``.GITIGNORE``_
 
 ## instruções de instalação;
 
 ## instruções de execução;
+1. FAZER _``NPM I``_ DENTRO DA PASTA _``FRONTEND``_ QUANDO CLONAR PARA INSTALAR AS DEPENDENCIAS JÁ ADICIONADAS NO PROJETO
+
+2. USAR _``IONIC SERVE``_ DENTRO DA PASTA _``FRONTEND``_ PARA VER AS TELAS
 
 ## informações necessárias para configuração;
+**CRIAR FRONT-END COM IONIC**
+1.  Ionic CLI: ``npm install -g @ionic/clinpm install -g @ionic/cli``
+
+2. Gerar projeto: ``ionic start frontend tabs --type=angular``
+
+**ROTAS E TELAS**
+- Comandos utilizados
+1. ionic generate page inicio
+2. ionic generate page emitir-senha
+3. ionic generate page login-atendente
 
 ## Membros (identificação e papéis dos membros);
 
